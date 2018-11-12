@@ -17,10 +17,7 @@ compiler:
   - gcc
   
 install:
-  - sudo adduser --gecos --disabled-login --disabled-password sinusbot
-  - sudo mkdir sinusbot
-  - sudo chown -R sinusbot:sinusbot ./sinusbot
-  - sudo su sinusbot
+  - mkdir sinusbot
   - cd ./sinusbot
   - wget https://www.sinusbot.com/dl/sinusbot.current.tar.bz2
   - tar -xjf sinusbot.current.tar.bz2

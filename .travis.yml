@@ -3,7 +3,6 @@ before_install:
   - sudo apt-get install make
   - sudo apt-get install g++
   - sudo apt-get install git
-  - sudo apt-get install curl
   - sudo apt-get install unzip
   - sudo apt-get install -y x11vnc xvfb libxcursor1 ca-certificates bzip2 libnss3 libegl1-mesa x11-xkb-utils libasound2
   - sudo update-ca-certificates
@@ -20,7 +19,7 @@ compiler:
 install:
   - sudo mkdir sinusbot
   - cd ./sinusbot
-  - curl -O https://www.sinusbot.com/dl/sinusbot.current.tar.bz2
+  - wget https://www.sinusbot.com/dl/sinusbot.current.tar.bz2
   - tar -xjf sinusbot.current.tar.bz2
   - wget https://github.com/VerHext/sinusbotTestSuite-storage/raw/master/TeamSpeak3-Client-linux_amd64.zip
   - unzip TeamSpeak3-Client-linux_amd64.zip

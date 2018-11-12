@@ -17,14 +17,17 @@ compiler:
   - gcc
   
 install:
+  - sudo adduser --disabled-login sinusbot
   - sudo mkdir sinusbot
+  - sudo chown -R sinusbot:sinusbot ./sinusbot
+  - su sinusbot
   - cd ./sinusbot
-  - sudo wget https://www.sinusbot.com/dl/sinusbot.current.tar.bz2
-  - sudo tar -xjf sinusbot.current.tar.bz2
-  - sudo wget https://raw.githubusercontent.com/VerHext/sinusbotTestSuite-storage/master/config.ini
-  - sudo wget https://github.com/VerHext/sinusbotTestSuite-storage/raw/master/TeamSpeak3-Client-linux_amd64.zip
-  - sudo unzip TeamSpeak3-Client-linux_amd64.zip
-  - sudo ls
+  - wget https://www.sinusbot.com/dl/sinusbot.current.tar.bz2
+  - tar -xjf sinusbot.current.tar.bz2
+  - wget https://raw.githubusercontent.com/VerHext/sinusbotTestSuite-storage/master/config.ini
+  - wget https://github.com/VerHext/sinusbotTestSuite-storage/raw/master/TeamSpeak3-Client-linux_amd64.zip
+  - unzip TeamSpeak3-Client-linux_amd64.zip
+  - ls
   - ./sinusbot
   
 

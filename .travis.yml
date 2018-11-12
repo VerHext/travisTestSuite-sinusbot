@@ -19,11 +19,11 @@ compiler:
 install:
   - sudo mkdir sinusbot
   - cd ./sinusbot
-  - wget https://www.sinusbot.com/dl/sinusbot.current.tar.bz2
-  - tar -xjf sinusbot.current.tar.bz2
-  - wget https://github.com/VerHext/sinusbotTestSuite-storage/raw/master/TeamSpeak3-Client-linux_amd64.zip
-  - unzip TeamSpeak3-Client-linux_amd64.zip
-  - ls
+  - sudo wget https://www.sinusbot.com/dl/sinusbot.current.tar.bz2
+  - sudo tar -xjf sinusbot.current.tar.bz2
+  - sudo wget https://github.com/VerHext/sinusbotTestSuite-storage/raw/master/TeamSpeak3-Client-linux_amd64.zip
+  - sudo unzip TeamSpeak3-Client-linux_amd64.zip
+  - sudo ls
   - ./sinusbot
   
 

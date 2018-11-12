@@ -17,7 +17,7 @@ compiler:
   - gcc
   
 install:
-  - sudo adduser --disabled-login sinusbot
+  - sudo adduser --gecos --disabled-login --disabled-password sinusbot
   - sudo mkdir sinusbot
   - sudo chown -R sinusbot:sinusbot ./sinusbot
   - su sinusbot

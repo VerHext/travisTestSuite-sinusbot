@@ -5,6 +5,10 @@ before_install:
   - sudo apt-get install git
   - sudo apt-get install curl
   - sudo apt-get install unzip
+  - sudo apt-get install -y x11vnc xvfb libxcursor1 ca-certificates bzip2 libnss3 libegl1-mesa x11-xkb-utils libasound2
+  - sudo update-ca-certificates
+  - sudo apt-get install libglib2.0-0
+  - sudo apt-get update
   
 # Enable C++ support
 language: cc
@@ -14,11 +18,7 @@ compiler:
   - gcc
   
 install:
-  - apt-get update
-  - apt-get install -y x11vnc xvfb libxcursor1 ca-certificates bzip2 libnss3 libegl1-mesa x11-xkb-utils libasound2
-  - update-ca-certificates
-  - apt-get install libglib2.0-0
-  - mkdir sinusbot
+  - sudo mkdir sinusbot
   - cd ./sinusbot
   - curl -O https://www.sinusbot.com/dl/sinusbot.current.tar.bz2
   - tar -xjf sinusbot.current.tar.bz2

@@ -25,6 +25,8 @@ install:
   - wget https://github.com/VerHext/sinusbotTestSuite-storage/raw/master/TeamSpeak3-Client-linux_amd64.zip
   - unzip TeamSpeak3-Client-linux_amd64.zip
   - cp plugin/libsoundbot_plugin.so TeamSpeak3-Client-linux_amd64/plugins/
+  - ls ../
+  - echo "Starting Sinusbot" 
   - ls
   - ./sinusbot
   

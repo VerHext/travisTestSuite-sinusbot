@@ -64,7 +64,7 @@ registerPlugin({
             field: 'spDatenschutz',
             value: 0
         }]
-    }, {
+    }, {gzui
         name: 'spSorryGermanNot',
         indent: 2,
         title: 'Sorry :/ but German is not available. But in the next version 2.0.5',
